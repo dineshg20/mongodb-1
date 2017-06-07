@@ -1,0 +1,71 @@
+
+
+
+
+                 Welcome to mongodb
+
+
+--------------------------------------------------------------------------------
+
+
+basic commands
+
+
+  -->  show dbs
+
+  --> db [name]
+
+  --> db.createUser({user:"",pwd:"",["readwrite","dbAdmin"] })
+
+  --> db.createCollection('name')
+
+  --> db.name.insert({first_name:"",..})
+
+  --> db.name.update({first_name:""},{.new values.})
+
+  --> db.name.update({first_name:""},{$set:{particular filed}})
+
+       more commands
+
+        $unset
+
+        $inc
+
+        $rename (key)
+
+
+  --> db.name.remove({first_name:""})
+
+  --> db.name.find().pretty()
+
+  --> db.name.find({first_name:""})
+
+      more commands
+
+      $or:  
+
+    example: db.name.find({$or:[{"asd":""},{"asdasd":""}]})
+
+
+      $lt 
+
+    example: db.name.find({age:{$lt:40}})
+
+
+  --> db.name.find().sort({first_name:1})
+
+      1 : increasing
+
+     -1 : decreasing
+
+
+   --> db.name.find().count()
+
+   -->db.name.find().limit(4)
+
+  --> db.name.find().forEach(function(doc){print("name is " + doc.first_name)})
+
+
+        
+
+
