@@ -65,7 +65,13 @@ basic commands
 
   --> db.name.find().forEach(function(doc){print("name is " + doc.first_name)})
 
+export 
 
+mongoexport -d database -c colelction -o output.json
         
+import
+
+mongoimport -d database -c collection output.json
+
 
 
